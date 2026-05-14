@@ -22,7 +22,7 @@ Where the network's state `s` depends entirely on the adjacency matrix `A` at th
 ### Installation
 Clone the repository to your local machine:
 ```bash
-git clone [https://github.com/Raj123-0/avalanche-graph-dynamics.git](https://github.com/Raj123-0/avalanche-graph-dynamics.git)
+git clone https://github.com/Raj123-0/avalanche-graph-dynamics.git
 cd avalanche-graph-dynamics
 
 
