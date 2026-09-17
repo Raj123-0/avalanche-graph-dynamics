@@ -1,10 +1,25 @@
+"""Module for mathematical computation and analysis."""
+
 class AvalancheGraph:
     def __init__(self, points_count):
+        """Init.
+        
+        Args:
+            points_count:
+        
+        """
         self.n = points_count
         self.states = [0] * self.n
         self.adjacency = [[0] * self.n for _ in range(self.n)]
 
     def connect(self, u, v):
+        """Connect.
+        
+        Args:
+            u:
+            v:
+        
+        """
         print(f"--- Drawing chord between Point {u} and Point {v} ---")
         
         neighbors_u = [i for i, connected in enumerate(self.adjacency[u]) if connected == 1]
@@ -23,6 +38,9 @@ class AvalancheGraph:
         self.display_state()
 
     def display_state(self):
+        """Display state.
+        
+        """
         print(f"Current States:   {self.states}")
         print("Adjacency Matrix:")
         for row in self.adjacency:
